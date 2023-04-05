@@ -12,7 +12,7 @@ function FeedbackList({ feedback, handleDelete }) {
   return (
     <>
       <div className="feedback-list">
-        {feedback.map((feed, handleDelete) => (
+        {feedback.map((feed) => (
           <FeedbackItem key={feed.id} item={feed} handleDelete={handleDelete} />
         ))}
       </div>
