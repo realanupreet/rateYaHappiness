@@ -9,7 +9,27 @@ function Header(props) {
   return (
     <header style={HeaderStyles}>
       <div className="container">
-        <h2>{props.text} Ui</h2>
+        <h2>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-around",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src="https://em-content.zobj.net/source/microsoft-teams/337/growing-heart_1f497.png"
+              width={"50px"}
+            />
+            {"  "}
+            {props.text} Ui{" "}
+            <img
+              src="https://em-content.zobj.net/source/microsoft-teams/337/growing-heart_1f497.png"
+              width={"50px"}
+            />
+          </div>
+        </h2>
       </div>
     </header>
   );
